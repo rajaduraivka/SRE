@@ -1,0 +1,172 @@
+psql -h rms-p-rackrate-master-pg.treebo.com -d rackrate_db -U rackrate_admin -c "\copy (select * from guardrail where min_price <900;) TO 'Min_price_less_900.csv';"
+psql -h rms-p-rackrate-master-pg.treebo.com -d rackrate_db -U rackrate_admin -p 6432 -c "\copy (select * from guardrail where min_price >=900) TO 'min_price_greater_900.csv';"
+
+scp rajadurai.a@10.20.1.131:/home/rajadurai.a/Min_price_less_900.csv ~/Downloads/
+\i /Users/rajadurai/Downloads/Guardrail - Sheet7 - Guardrail - Sheet7.csv
+
+
+?cmode=override
+&&cache=override
+
+Please use this one when you don’t have permission
+rm -rf .ssh/known_hosts
+
+cd .ssh/
+ssh -i /Users/rajadurai/.ssh/oak.pem ubuntu@10.20.1.178
+cd /etc/sensu/conf.d/checks/
+service sensu-server restart
+
+muthulakshmianndurai
+annadurai@76
+Profile Pwd
+annadurai@37
+Account number: 20344577715
+CIF No: 88901682247
+
+# sync; echo 1 > /proc/sys/vm/drop_caches
+# sync; echo 2 > /proc/sys/vm/drop_caches
+# sync; echo 3 > /proc/sys/vm/drop_caches 
+
+ 1953  vi app_info.log
+ 1954  docker ps
+ 1955  cd /tmp/primus/build/desktop/js/
+ 1956  ls -ltrh manifest.249f26c424dab97cc58a.js
+ 1957  docker exec -it corpbackend_nginx_service sh
+ 1958  exit
+ 1959  docker ps
+ 1960  docker ps |wc -l
+ 1961  docker ps |wc -l
+ 1962  docker ps 
+ 1963  docker exec -it corpbackend_nginx_service sh
+ 1964  cd /var/log/
+ 1965  ls
+ 1966  cd b2b
+ 1967  grep "Cant change checkin when the room in already checked in" app_error.log
+ 1968  ls
+ 1969  grep "Cant change checkin when the room in already checked in" app_error.log
+ 1970  ls -lahtr
+ 1971  docker ps
+ 1972  docker logs b2b_app_server | grep 5c901d1a712b4714b4f4ca73496a4312
+ 1973  ls -lahtr
+ 1974  less *.log | grep 5c901d1a712b4714b4f4ca73496a4312
+
+
+TNSTC
+Rajadurai.Annadurai
+Rajadurai37 (edited) 
+
+
+Logrotation:
+crontab -l --->vi /usr/local/bin/scripts/call-logrotate
+/usr/sbin/logrotate -d /usr/local/bin/scripts/logrotate-treebo.conf --> debug mode
+vi /usr/local/bin/scripts/logrotate-treebo.conf --> file path of logs to rotate
+
+
+
+
+
+1:59
+crontab -e
+2:00
+vi /usr/local/bin/scripts/call-logrotate.sh
+2:01
+chmod 644 /usr/local/bin/scripts/logrotate-treebo.conf
+
+
+ls -lhtr
+du -sh *| sort -hr| head -3n
+
+
+
+scp rajadurai.a@10.20.1.253:/home/rajadurai.a/new_bookings_copy_mar.csv ~/Downloads/
+
+resize
+sips -Z 300 *.png --out ~/Desktop/Small/
+sips -Z 640 *.png 
+
+=ARRAYFORMULA(IFERROR(CONCATENATE("'"&A1:A53&"'"&",")))
+
+IMEI 1: 864669044994272
+IMEI2: 864669044994280
+
+tail -f *.log | grep -i 'abcd'
+
+sudo rm -rf -d ~/Music/*.txt
+
+find . -type f -iname  \*.csv -delete
+
+find . -type f -name "loyalty_point_seed_prod.py"
+
+tail -100f its.log
+
+df -h
+ 439  cd /var
+ 440  du -sh *| sort -hr | head -3
+ 441  cd log
+ 442  du -sh *| sort -hr | head -3
+ 443  cd treebotech/
+ 444  ls
+ 445  crontab -l
+ 446  cd /usr/local/bin/scripts/call-logrotate.sh
+ 447  cd /usr/local/bin/scripts
+ 448  ls
+ 449  vi call-logrotate.sh
+ 450  /usr/sbin/logrotate -d /usr/local/bin/scripts/logrotate-treebo.conf
+ 451  ls -lhtr /usr/local/bin/scripts/logrotate-treebo.conf
+ 452  ls -l /usr/local/bin/scripts
+ 453  ls -l /usr/local/bin
+ 454  chmod 600 /usr/local/bin/scripts/logrotate-treebo.conf
+ 455  /usr/sbin/logrotate -d /usr/local/bin/scripts/logrotate-treebo.conf
+ 456  cd /var/log
+ 457  du -sh *| sort -hr | head -3
+ 458  cd treebotech/
+ 459  du -sh *| sort -hr | head -3
+ 460  cd growth-hack/
+ 461  du -sh *| sort -hr | head -3
+ 462  truncate -s 15G domain_events.log
+ 463  truncate -s 15G communication.log
+ 464  truncate -s 15G alert.log
+
+
+cd /etc/sensu/conf.d
+cd /var/log/sensu/
+vi client.json
+
+
+service newrelic-infra stop
+
+To know the private and public ip inside machine 
+ip addr show
+curl icanhazip.com
+curl http://checkip.amazonaws.com
+
+
+
+htop
+   81  free -mh
+   82  df -h
+   83  htop
+   84  fallocate -l 8G /swapfile
+   85  df -h
+   86  ls -l
+   87  ls
+   88  ls /swapfile
+   89  chmod 600 /swapfile
+   90  ls -lh /swapfile 
+   91  mkswap /swapfile
+   92  swapon /swapfile
+   93  htop
+   94  cp /etc/fstab /etc/fstab.bak
+   95  echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+   96  htop
+   97  top
+   98  free -mh
+   99  free -h
+  100  free -mh
+  101  top
+  102  htop
+  103  free -mh
+  104  docker ps -a
+  105  free -mh
+
+
