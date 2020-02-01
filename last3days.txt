@@ -1,0 +1,6 @@
+-rwxr-xr-x  1 rajadurai  staff  82 Nov  4 14:12 ./athena-demo/First.sh
+-rwxr-xr-x  1 rajadurai  staff  63 Nov  4 14:24 ./athena-demo/loop.sh
+-rwxrwxrwx  1 rajadurai  staff  18 Nov  4 15:02 ./athena-demo/abc.txt
+-rwxrwxrwx  1 rajadurai  staff  31 Nov  4 14:13 ./athena-demo/3row.sh
+-rwxrwxrwx  1 rajadurai  staff  54 Nov  4 14:20 ./athena-demo/function.sh
+-rw-r--r--  1 rajadurai  staff  355 Nov  6 20:13 ./last3days.txt
