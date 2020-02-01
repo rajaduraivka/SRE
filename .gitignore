@@ -1,0 +1,11 @@
+.pytest_cache
+*.log
+*.pyc
+.idea
+.fabricrc_local
+build
+dist
+*.log*
+*.DS_Store
+*venv
+*.orig
