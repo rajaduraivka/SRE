@@ -13,18 +13,18 @@ cursor = conn.cursor()
 
 #Fetching all the rows before the update
 print("Contents of the sku_room_price_config: ")
-sql = '''SELECT * from v2.sku_room_price_config WHERE applicability ='0001825''''
+sql = "SELECT * from v2.sku_room_price_config WHERE applicability ='0019919';"
 cursor.execute(sql)
 print(cursor.fetchall())
 
 #Updating the records
-sql = "UPDATE v2.sku_room_price_config SET acacia='0',oak='0', maple='200', mahogany='400' WHERE applicability ='0001825';"
+sql = "UPDATE v2.sku_room_price_config SET acacia='0',oak='0', maple='200', mahogany='400' WHERE applicability ='0019919';"
 cursor.execute(sql)
 print("Table updated...... ")
 
 #Fetching all the rows after the update
-print("Contents of the Employee table after the update operation: ")
-sql = '''SELECT * from v2.sku_room_price_config WHERE applicability ='0001825'''
+print("Contents of the sku_room_price_config table after the update operation: ")
+sql = "SELECT * from v2.sku_room_price_config WHERE applicability ='0019919';"
 cursor.execute(sql)
 print(cursor.fetchall())
 
