@@ -1,5 +1,5 @@
 #!/bin/bash
-# removing used images and deleting images from Desktop
+# removing used images and deleting images from Desktop on daily basis
 
 
 rm -rf -d ~/Desktop/*.png
