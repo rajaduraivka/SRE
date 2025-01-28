@@ -1,0 +1,66 @@
+# Create IAM Role for SSM
+resource "aws_iam_role" "flutter_dev_role" {
+  name = "flutter_dev_role"
+
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17",
+    Statement = [
+      {
+        Action = "sts:AssumeRole",
+        Effect = "Allow",
+        Principal = {
+          Service = "ec2.amazonaws.com"
+        }
+      },
+      {
+        "Effect": "Allow",
+        "Principal": {
+           "Service": "es.amazonaws.com"
+            },
+        "Action": "sts:AssumeRole"
+      }
+    ]
+  })
+}
+
+# Attach SSM Managed Policy to the IAM Role
+resource "aws_iam_role_policy_attachment" "ssm_policy_attachment" {
+  role       = aws_iam_role.flutter_dev_role.name
+  policy_arn = "arn:aws:iam::aws:policy/AmazonSSMReadOnlyAccess"
+}
+
+resource "aws_iam_role_policy_attachment" "ssm_policy_attachment_new" {
+  role       = aws_iam_role.flutter_dev_role.name
+  policy_arn = "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore"
+}
+
+# Create an IAM Instance Profile
+resource "aws_iam_instance_profile" "ssm_instance_profile" {
+  name = "ssm-instance-profile"
+  role = aws_iam_role.flutter_dev_role.name
+}
+
+
+/*resource "aws_iam_role_policy" "es_s3_snap_manual_policy" {
+  name = "es-s3-snap-manual-policy"
+  role = aws_iam_role.flutter_dev_role.id
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Effect = "Allow"
+        Action = [
+          "s3:PutObject",
+          "s3:GetObject",
+          "s3:ListBucket",
+          "iam:PassRole"
+        ]
+        Resource = [
+          "arn:aws:s3:::es-snapshot-test-2024",
+          "arn:aws:s3:::es-snapshot-test-2024/*",
+          aws_iam_role.flutter_dev_role.arn
+        ]
+      }
+    ]
+  })
+}*/
