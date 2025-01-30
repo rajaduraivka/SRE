@@ -1,7 +1,7 @@
 import os
 import time
 
-# List of directories to scan
+# List of directories to scan in my mac
 directories = [
     "/Users/bijak/Documents",
     "/Users/bijak/Downloads",
