@@ -3,7 +3,7 @@ import csv
 import sys
 
 
-host_name = 'rms-p-rackrate-master-pg.treebo.com'
+host_name = 'rms-p-rackrate-master-pg.com'
 db_port = '6432'
 db_name = 'rackrate_db'
 db_user = 'rackrate_admin'
